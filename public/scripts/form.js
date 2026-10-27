@@ -9,8 +9,8 @@ document.getElementById("vac-form").onsubmit = () => {
         isValid = false;
     }
 
-    let num = document.getElementById("num-travel").value;
-    if(num === 0 || num < 0){
+    let num = Number(document.getElementById("num-travel").value);
+    if(num === 0 || num < 0 || num === ""){
         document.getElementById("error-num").style.display = "inline-block";
         isValid = false;
     }
