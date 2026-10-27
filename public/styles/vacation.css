@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    background-color: gray;
+}
+
+header {
+    width: 70%;
+    margin: 3rem auto 0 auto;
+    padding: 3rem;
+    background-color: black;
+    background-image: url(../images/header_image.png);
+}
+
+.mainBox {
+    margin: 0 auto 3rem auto;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+form {
+    background-color: white;
+    padding: 1rem;
+    margin: 0;
+    width: 77%;
+    margin: 0 auto;
+}
+
+#meeting-option {
+    width: 100%;
+    margin: .5rem 0 1rem 0;
+    padding: .5rem;
+}
+
+#num-travel, #depart-date {
+    width: 80%;
+}
+
+#details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: none;
+}
+
+#submit-button {
+    background-color: black;
+    color: white;
+    margin: auto;
+    display: block;
+    padding: 1rem;
+    width: 50%;
+}
+
+.error {
+    color: red;
+    display: none;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 1rem;
+}

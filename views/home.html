@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacation Booking</title>
+
+    <link rel="stylesheet" href="styles/vacation.css"> 
+    <link rel="icon" href="images/airplane.png">
+    <script src="scripts/form.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Book Your Dream Vacation</h1>
+    </header>
+    <main class="mainBox"> 
+        <form id="vac-form" action="/confirm-vac" method="post">
+            <!--Destination-->
+            <label for="dest-option">Destination</label> 
+            <span class="error" id="error-dest">Destination not chosen</span> <br>
+            <select id="dest-option" name="dest-option">
+                <option value="none">Choose a destination</option>
+                <option value="france">France</option>
+                <option value="uk">United Kingdom</option>
+                <option value="japan">Japan</option>
+                <option value="skorea">South Korea</option>
+                <option value="mexico">Mexico</option>
+                <option value="china">China</option>
+            </select> <br>
+
+            <fieldset id="details">
+                <div>
+                    <!--Date-->
+                    <label for="depart-date">Departure Date:</label> <br>
+                    <input type="date" id="depart-date" name="depart-date">
+                </div>
+                
+                <div>
+                    <!--Travelers-->
+                    <label for="num-travel">Number of Travelers:</label>
+                    <span class="error" id="error-num">Invalid number</span> <br>
+                    <input type="number" id="num-travel" name="num-travel"> 
+                </div>
+            </fieldset>
+
+            <button type="submit" id="submit-button">Find My Vacation</button> 
+        </form>
+    </main>
+
+    <footer>
+        <p>GitHub Repository: https://github.com/KevinFG02/vacation-booking</p>
+    </footer>
+</body>
+</html>
